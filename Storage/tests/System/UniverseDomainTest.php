@@ -15,11 +15,12 @@
  * limitations under the License.
  */
 
- namespace Google\Cloud\Storage\Tests\System;
- use Google\Cloud\Storage\Bucket;
+namespace Google\Cloud\Storage\Tests\System;
 
- class UniverseDomainTest extends StorageTestCase
- {
+use Google\Cloud\Storage\Bucket;
+
+class UniverseDomainTest extends StorageTestCase
+{
     private static $universeDomainBucket;
     private static $bucketName;
     /**
@@ -64,5 +65,4 @@
         }
         $this->assertEquals($objectsToCreate, $foundObjects);
     }
- }
- ?>
+}
